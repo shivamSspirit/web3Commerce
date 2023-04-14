@@ -1,6 +1,7 @@
 import { ethers } from 'ethers'
 
 const Navigation = ({ account, setAccount }) => {
+    
     const connectHandler = async () => {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = ethers.utils.getAddress(accounts[0])
@@ -10,7 +11,7 @@ const Navigation = ({ account, setAccount }) => {
     return (
         <nav>
             <div className='nav__brand'>
-                <h1>Dappazon</h1>
+                <h1>Web3Ecommerce</h1>
             </div>
 
             <input
